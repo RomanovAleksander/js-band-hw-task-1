@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="forms">
+  <form class="form-ship">
+    <h2 class="header">Ship</h2>
+    <div class="form-item">
+      <label for="shipModel">Model</label>
+      <input required id="shipModel" class="model"
+             type="text" value="" placeholder="model">
+    </div>
+    <div class="form-item">
+      <label for="shipName">Name</label>
+      <input required id="shipName" class="name"
+             type="text" value="" placeholder="name">
+    </div>
+    <div class="form-item">
+      <label for="shipProducedYear">Produced year</label>
+      <input required id="shipProducedYear" class="producedYear"
+             type="text" value="" placeholder="produced year">
+    </div>
+    <div class="form-item">
+      <label for="shipCapacity">Capacity</label>
+      <input required id="shipCapacity" class="capacity"
+             type="text" value="" placeholder="capacity">
+    </div>
+    <div class="form-item">
+      <label for="shipAverageSpeed">Average speed</label>
+      <input required id="shipAverageSpeed" class="averageSpeed"
+             type="text" value="" placeholder="average speed">
+    </div>
+    <div class="form-item">
+      <label for="shipCountOfTeam">Count of team</label>
+      <input required id="shipCountOfTeam" class="countOfTeam"
+             type="text" value="" placeholder="count of team">
+    </div>
+    <button type="submit" class="button">Save</button>
+  </form>
+  <form class="form-truck">
+    <h2 class="header">Truck</h2>
+    <div class="form-item">
+      <label for="truckModel">Model</label>
+      <input required id="truckModel" class="model"
+             type="text" value="" placeholder="model">
+    </div>
+    <div class="form-item">
+      <label for="truckLicensePlate">License plate</label>
+      <input required id="truckLicensePlate" class="licensePlate"
+             type="text" value="" placeholder="license plate">
+    </div>
+    <div class="form-item">
+      <label for="truckProducedYear">Produced year</label>
+      <input required id="truckProducedYear" class="producedYear"
+             type="text" value="" placeholder="produced year">
+    </div>
+    <div class="form-item">
+      <label for="truckCapacity">Capacity</label>
+      <input required id="truckCapacity" class="capacity"
+             type="text" value="" placeholder="capacity">
+    </div>
+    <div class="form-item">
+      <label for="truckAverageSpeed">Average speed</label>
+      <input required id="truckAverageSpeed" class="averageSpeed"
+             type="text" value="" placeholder="average speed">
+    </div>
+    <div class="form-item">
+      <label for="truckTypeOfGas">Type of gas</label>
+      <input required id="truckTypeOfGas" class="typeOfGas"
+             type="text" value="" placeholder="type of gas">
+    </div>
+    <button type="submit" class="button">Save</button>
+  </form>
+  <form class="form-costs">
+    <h2 class="header">Cost of delivery</h2>
+    <div class="form-item">
+      <label for="transportModel">Model</label>
+      <input required id="transportModel" class="transportModel"
+             type="text" value="" placeholder="model">
+    </div>
+    <div class="form-item">
+      <label for="costOfCargo">Cost by 1 kg of cargo</label>
+      <input required id="costOfCargo" class="costOfCargo"
+             type="text" value="" placeholder="cost">
+    </div>
+    <div class="form-item">
+      <label for="costOfDistance">Cost by 1 km of distance</label>
+      <input required id="costOfDistance" class="costOfDistance"
+             type="text" value="" placeholder="cost">
+    </div>
+    <button type="submit" class="button">Save</button>
+  </form>
+</div>
+<div class="line"></div>
+<div class="list-wrapper">
+  <div class="list">
+    <h2 class="transport-list-header header">List of transport</h2>
+  </div>
+  <div class="list">
+    <h2 class="costs-list-header header">List of cost of delivery</h2>
+  </div>
+</div>
+<script type="module" src="js/index.js"></script>
+</body>
+</html>
