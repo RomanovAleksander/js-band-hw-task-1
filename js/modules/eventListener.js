@@ -1,9 +1,9 @@
 import Ship from "./transport/ship.js";
 import Truck from "./transport/lorry.js";
 import Cost from "./transport/cost.js";
-import RenderItem from "./data.js";
+import Data from "./data.js";
 
-export default class EventListener extends RenderItem{
+export default class EventListener extends Data{
   constructor() {
     super();
     this.forms = document.querySelector('.forms');

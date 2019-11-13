@@ -1,12 +1,13 @@
-export default class Data{
+export default class Data {
   constructor() {
     this.transport = [];
     this.costs = [];
   }
 
   getItemsFromLocalStorage() {
+    console.log(localStorage);
     if (localStorage.transport) {
-      this.transport = JSON.parse(localStorage.getItem('transports'));
+      this.transport = JSON.parse(localStorage.getItem('transport'));
       this.transport.forEach(item => {
         this.renderTransportItem(item);
       });
