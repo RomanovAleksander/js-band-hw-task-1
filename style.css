@@ -23,6 +23,9 @@ form {
     margin: 0;
     border-bottom: 2px solid black;
     text-align: center;
+    background-color: lightslategray;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .form-item {
@@ -43,10 +46,16 @@ input {
 .button {
     height: 30px;
     border: 0;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    background: lightgray;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: lightslategray;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: lightgray;
+    color: lightslategray;
 }
 
 .line {
@@ -73,7 +82,6 @@ input {
     border: 2px solid #000;
     border-radius: 8px;
     font-size: 20px;
-    background-color: #fff;
     margin: 20px;
 }
 
@@ -91,4 +99,14 @@ input {
     align-items: center;
     border-top: 2px solid black;
     padding: 7px 0 14px 0;
+    background: lightgrey;
+}
+
+.list-item:nth-last-child(1) {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.item-text span {
+    color: maroon;
 }

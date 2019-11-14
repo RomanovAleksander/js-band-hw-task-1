@@ -35,7 +35,6 @@ export default class EventListener extends Data{
         item.type = 'Ship';
         item.name = inputName.value.trim();
         item.countOfTeam = inputCountOfTeam.value.trim();
-        this.transport.push(item);
         element = new Ship(item);
 
         inputModel.value = '';
@@ -44,7 +43,8 @@ export default class EventListener extends Data{
         inputAverageSpeed.value = '';
         inputName.value = '';
         inputCountOfTeam.value = '';
-        this.renderTransportItem(item);
+        this.transport.push(item);
+        this.renderItem(item);
         break;
       case 'form-truck':
         const inputLicensePlate = target.querySelector('.licensePlate');
@@ -53,7 +53,6 @@ export default class EventListener extends Data{
         item.type = 'Truck';
         item.licensePlate = inputLicensePlate.value.trim();
         item.typeOfGas = inputTypeOfGas.value.trim();
-        this.transport.push(item);
         element = new Truck(item);
 
         inputModel.value = '';
@@ -62,7 +61,8 @@ export default class EventListener extends Data{
         inputAverageSpeed.value = '';
         inputLicensePlate.value = '';
         inputTypeOfGas.value = '';
-        this.renderTransportItem(item);
+        this.transport.push(item);
+        this.renderItem(item);
         break;
       case 'form-costs':
         const inputTransportModel = target.querySelector('.transportModel');
@@ -71,14 +71,14 @@ export default class EventListener extends Data{
 
         item.model = inputTransportModel.value;
         item.costOfCargo = inputCostOfCargo.value;
-        item.costOFDistance = inputCostOfDistance.value;
-        this.costs.push(item);
+        item.costOfDistance = inputCostOfDistance.value;
         element = new Cost(item);
 
         inputTransportModel.value = '';
         inputCostOfCargo.value = '';
         inputCostOfDistance.value = '';
-        this.renderCostItem(item);
+        this.costs.push(item);
+        this.renderItem(item);
         break;
     }
 
