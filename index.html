@@ -25,17 +25,18 @@
     <div class="form-item">
       <label for="shipProducedYear">Produced year</label>
       <input required id="shipProducedYear" class="producedYear"
-             type="text" value="" placeholder="produced year">
+             min="1915" max="2019"
+             type="number" value="" placeholder="produced year">
     </div>
     <div class="form-item">
       <label for="shipCapacity">Capacity</label>
-      <input required id="shipCapacity" class="capacity"
-             type="text" value="" placeholder="capacity">
+      <input required id="shipCapacity" class="capacity" min="0"
+             type="number" value="" placeholder="capacity in kg">
     </div>
     <div class="form-item">
       <label for="shipAverageSpeed">Average speed</label>
-      <input required id="shipAverageSpeed" class="averageSpeed"
-             type="text" value="" placeholder="average speed">
+      <input required id="shipAverageSpeed" class="averageSpeed" min="0"
+             type="number" value="" placeholder="average speed in nm">
     </div>
     <div class="form-item">
       <label for="shipCountOfTeam">Count of team</label>
@@ -59,17 +60,18 @@
     <div class="form-item">
       <label for="truckProducedYear">Produced year</label>
       <input required id="truckProducedYear" class="producedYear"
-             type="text" value="" placeholder="produced year">
+             min="1915" max="2019"
+             type="number" value="" placeholder="produced year">
     </div>
     <div class="form-item">
       <label for="truckCapacity">Capacity</label>
-      <input required id="truckCapacity" class="capacity"
-             type="text" value="" placeholder="capacity">
+      <input required id="truckCapacity" class="capacity" min="0"
+             type="number" value="" placeholder="capacity in kg">
     </div>
     <div class="form-item">
       <label for="truckAverageSpeed">Average speed</label>
-      <input required id="truckAverageSpeed" class="averageSpeed"
-             type="text" value="" placeholder="average speed">
+      <input required id="truckAverageSpeed" class="averageSpeed" min="0"
+             type="number" value="" placeholder="average speed in km">
     </div>
     <div class="form-item">
       <label for="truckTypeOfGas">Type of gas</label>
@@ -87,13 +89,13 @@
     </div>
     <div class="form-item">
       <label for="costOfCargo">Cost by 1 kg of cargo</label>
-      <input required id="costOfCargo" class="costOfCargo"
-             type="text" value="" placeholder="cost">
+      <input required id="costOfCargo" class="costOfCargo" min="0"
+             type="number" value="" placeholder="cost">
     </div>
     <div class="form-item">
       <label for="costOfDistance">Cost by 1 km of distance</label>
-      <input required id="costOfDistance" class="costOfDistance"
-             type="text" value="" placeholder="cost">
+      <input required id="costOfDistance" class="costOfDistance" min="0"
+             type="number" value="" placeholder="cost">
     </div>
     <button type="submit" class="button">Save</button>
   </form>
